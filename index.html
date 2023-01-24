@@ -9,33 +9,55 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <!-- Google fonts: Archivo Regular 400, 600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div id="banner">
-        <div id="myName">
-        <h1>Kim Eunice Papa</h1>
-        </div>
-        <h2>DES 157A - Interactive Media II - Winter 2023</h2>
+
+            <div id="myName">
+            <h1>KIM EUNICE PAPA</h1>
+            </div>
+
+            <div id = "classInfo">
+            <h2>DES 157A</h2>
+            <h2>Interactive Media II</h2>
+            <h2>Winter 2023</h2>
+            </div>
+            <div id="rect">
+            <div id="rect1"></div>
+            <div id="rect2"></div>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <h2>Studios</h2>
-            <ul>
-                <li><a href="#">Learning Journal</a></li>
-                <li><a href="#">Mad Libs 2.0</a></li>
-                <li><a href="#">Every Picture</a></li>
-                <li><a href="#">Game On!</a></li>
-            </ul>
-            <h2>Experiments</h2>
-            <ul>
-                <li><a href="exp/exp1.html">Experiment 1</a></li>
-                <li><a href="">Experiment 2</a></li>
-            </ul>
+        
+        <section id = "column1">
+            
+            
+                <h2>Studios</h2>
+                <ul>
+                    <li><a href="#">Learning Journal</a></li>
+                    <li><a href="#">Mad Libs 2.0</a></li>
+                    <li><a href="#">Every Picture</a></li>
+                    <li><a href="#">Game On!</a></li>
+                </ul>
+                <h2>Experiments</h2>
+                <ul>
+                    <li><a href="exp/exp1.html">Experiment 1</a></li>
+                    <li><a href="">Experiment 2</a></li>
+                </ul>
+
+                <div class="circle"></div>
         </section>
-        <section>
+        <section id = "column2">
+
+          
             <h2>Research & Development</h2>
             <ul>
                 <li><a href="#">Project Brief</a></li>
@@ -43,17 +65,26 @@
                 <li><a href="#">Version 1</a></li>
                 <li><a href="#">Version 2 (User Test)</a></li>
                 <li><a href="#">User Test Results</a></li>
-            </ul>
+            </ul>            
+
+            <div class="circle"></div>
         </section>
-        <section>
+        <section id = "column3">
+
             <h2>Final</h2>
             <ul>
                 <li><a href="#">Final Project</a></li>
             </ul>
+
+            <div class="circle"></div>
         </section>
     </main>
     <footer>
+        <div id="foot">
+        <a href="images/html-valid.png" alt="Screenshot of HTML validation">Valid HTML</a>
         <a href="mailto:&#107;&#114;&#112;&#097;&#112;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+        <a href="images/css-valid.png" alt="Screenshot of CSS validation">Valid CSS</a>
+        </div>
     </footer>
 </body>
 </html>
