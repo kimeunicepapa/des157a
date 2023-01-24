@@ -120,8 +120,20 @@ footer {
     border-radius: 30px;
     border: 2px solid black;
     text-align: center;
-    background-color: rgba(102, 97, 163, 50%);
+    
 
+}
+
+#class1 {
+    background-color: rgba(225, 109, 64, 50%);
+}
+
+#class2 {
+    background-color: rgba(102, 97, 163, 50%);
+}
+
+#class3 {
+    background-color: rgba(68, 153, 117, 50%);
 }
 
 
@@ -160,7 +172,7 @@ footer {
     left: 0;
     width: 334px;
     height: 52px;
-    background-color: rgba(68, 153, 117, 60%);
+    background-color: rgba(68, 153, 117, 50%);
     border: 2px solid black;
     border-radius: 30px;
  
@@ -172,7 +184,7 @@ footer {
     right: 0;
     width: 334px;
     height: 52px;
-    background-color: rgba(225, 109, 64, 60%);
+    background-color: rgba(225, 109, 64, 50%);
     border: 2px solid black;
     border-radius: 30px;
     
