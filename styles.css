@@ -125,22 +125,22 @@ footer {
 }
 
 #class1 {
-    background-color: rgba(108, 158, 254, 50%);
+    background-color: rgba(225, 109, 64, 50%);
 }
 
 #class2 {
-    background-color: rgba(218, 198, 253, 80%);
+    background-color: rgba(102, 97, 163, 50%);
 }
 
 #class3 {
-    background-color: rgba(255, 189, 252, 50%);
-
+    background-color: rgba(68, 153, 117, 50%);
 }
+
 
 /* sections style */
 #column1 {
     z-index: 1;
-    background-color: rgba(108, 158, 254, 30%);
+    background-color: rgba(225, 109, 64, 30%);
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 2px solid black;;
@@ -148,13 +148,13 @@ footer {
 
 #column2 {
 
-    background-color: rgba(218, 198, 253, 30%);
+    background-color: rgba(102, 97, 163, 30%);
     border: 2px solid black;
 }
 
 #column3 {
 
-    background-color: rgba(255, 189, 252, 30%);
+    background-color: rgba(68, 153, 117, 30%);
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;;
@@ -172,7 +172,7 @@ footer {
     left: 0;
     width: 334px;
     height: 52px;
-    background-color: rgba(108, 158, 254, 50%);
+    background-color: rgba(68, 153, 117, 50%);
     border: 2px solid black;
     border-radius: 30px;
  
@@ -184,7 +184,7 @@ footer {
     right: 0;
     width: 334px;
     height: 52px;
-    background-color: rgba(255, 189, 252, 50%);
+    background-color: rgba(225, 109, 64, 50%);
     border: 2px solid black;
     border-radius: 30px;
     
@@ -212,17 +212,17 @@ footer {
 }
 
 #column1:hover {
-    background-color: rgba(108, 158, 254, 100%);
+    background-color: rgba(225, 109, 64, 100%);
     transition: all 3s ease-out;
 }
 
 #column2:hover {
-    background-color: rgba(218, 198, 253, 100%);
+    background-color: rgba(102, 97, 163, 100%);
     transition: all 3s ease-out;
 }
 
 #column3:hover {
-    background-color: rgba(255, 189, 252, 100%);
+    background-color: rgba(68, 153, 117, 100%);
     transition: all 3s ease-out;
 }
 
@@ -243,13 +243,13 @@ section a:hover {
 
 @keyframes bgcolorchange {
     0% {
-        background-color: rgba(108, 158, 254, 40%);
+        background-color: rgba(225, 109, 64, 40%);
     }
     50% {
-        background-color: rgba(218, 198, 253, 40%);
+        background-color: rgba(102, 97, 163, 40%);
     }
     100% {
-        background-color: rgba(255, 189, 252, 40%);
+        background-color: rgba(68, 153, 117, 40%);
     }
 
 }
