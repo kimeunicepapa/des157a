@@ -1,0 +1,105 @@
+
+
+body {
+    position: relative;
+    max-width: 1200px;
+    max-height: 750px;
+    height: 1vh;
+    overflow: hidden;
+    font-family: Archivo, sans-serif;
+    background-color: black;
+    color: white;
+    
+}
+
+header {
+    display: flex;
+    /* padding: 0px; */
+
+}
+
+h1 {
+    margin: 0;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+main {
+    /* display: flex; */
+}
+
+article {
+    /* display: flex; */
+
+}
+
+h2 {
+    padding-top: 20px;
+    margin: 0;
+    font-family: Staatliches, sans-serif;
+    font-weight: 400;
+    font-size: 7em;
+    line-height: 0.9em;
+
+}
+
+h3 {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 3em;
+    color: #CFEBE6;
+}
+
+p {
+    max-width: 400px;
+    height: auto;
+    margin-top: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+time {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #CFEBE6;
+
+}
+
+#redBorder {
+    background-image: url(../images/border.png);
+    width: 1200px;
+    height: 750px;
+
+}
+
+#articleInfo{
+    display:flex;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 30px 50px;
+    
+}
+
+#text {
+    position: absolute;
+    z-index: -1;
+    padding: 30px 50px;
+    column-count: 3;
+    background-color: #CFEBE6;
+    
+}
+
+#text p {
+    widows: 2;
+}
+
+#titleDate{
+    flex: 2;
+    padding: 0 20px;
+}
