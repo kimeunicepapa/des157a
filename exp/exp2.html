@@ -4,33 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 1</title>
+    <title>Experiment 2</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+
+        h3 {
+            margin: 20px 0;
+            font-size: 6em;
+            color: black;
+        }
+
+        .cyan { background-color: cyan; }
+		.magenta { background-color: magenta; }
+        .yellow { background-color: yellow;}
+        .blue { background-color: blue; }
+		.red { background-color: red; }
+        .gray { background-color: gray; }
+
+        #one {
+            height: 100px;
+            width: 100%;
+
+        }
+
+    </style>
 </head>
 <body>
 
-    <h1>Experiment 1</h1>
-    <h2>Open the console to see the functionality of the code</h2>
+    <h1>Experiment 2</h1>
+
+
+    <h3>Guess the color</h3>
+
+    <div id = "one"></div>
+
 
     <script>
-        
-        //This a program that capitalizes every letter in the string
-        var string = "you're late!";
+        var myColor = prompt ("Choose a primary color", " ");
 
-        console.log (`"${string}" has been changed to "${string.toUpperCase()}"`);
+        function checkColor(color) {
+            var feedback;
+            var feedbackPrint = document.querySelector('h3');
 
-        //I wasn't sure if this was all for the experimentation so I wrote another program by using booleans and selection
+            if (color == "magenta"|color == "cyan"|color == "yellow") {
+                feedbackPrint.innerHTML = "You got it right!";
+            } else if (color == "red" | color == "blue") {
+                feedbackPrint.innerHTML = "Not exactly right but I'll take it";
+            } else {
+                feedbackPrint.innerHTML = "Oh no! You got it wrong";
 
-        //This program compares the numbers in the variables to calculate if there's enough time to complete a task
+            }
 
-        var timeNeeded = 2;
-        var timeAvailable = 3;
-
-
-        if (timeNeeded > timeAvailable) {
-            console.log ("You don't have enough time");
-        } else {
-            console.log (`You still have ${timeAvailable} hours. You can do it!`)
         }
+
+        function colorBackground(color){
+            var bodyBackground = document.querySelector('div');
+
+
+            if (color == "magenta") {
+                bodyBackground.className = 'magenta';
+            } else if (color == "cyan") {
+                bodyBackground.className = 'cyan';
+
+            } else if (color == "yellow") {
+                bodyBackground.className = 'yellow';
+
+            } else if (color == "red") {
+                bodyBackground.className = 'red';
+
+            }
+            else if (color == "blue") {
+                bodyBackground.className = 'blue';
+
+            }
+            else {
+                bodyBackground.className = 'gray';
+            }
+        }
+        checkColor(myColor);
+        colorBackground(myColor);
 
     </script>
 </body>
