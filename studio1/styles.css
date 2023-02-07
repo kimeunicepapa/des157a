@@ -1,7 +1,106 @@
 
+body {
+    font-family: Fraunces, serif;
+    color: #0500E2;
+    background-color: lightblue;
+}
 
+header {
+    max-width: 1100px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+h1 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 3em;
+}
 
 section {
-    width: 1200px;
+    max-width: 1100px;
     margin: auto;
+
+    background-color: azure;
+    font-size: 1.5em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
 }
+
+h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 2em;
+}
+
+form {
+    padding: 40px 50px;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #0500E2;
+
+} 
+
+input [type=text] {
+    width: 100%;
+}
+
+input [type=submit] {
+    background-color: #0500E2;
+    border: none;
+    color: white;
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+fieldset label {
+    margin-bottom: 20px;
+}
+
+p {
+    padding-bottom: 0px 20px 20px 120px;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+#line {
+    display: inline-block;
+    width: 200px;
+    border-bottom: 5px solid #0500E2 ;
+}
+
+#output {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#container {
+    display: flex;
+    padding: 0 50px;
+}
+
+#container img {
+    /* width: 50%; */
+    object-fit: contain;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

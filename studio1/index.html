@@ -10,6 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,900;1,9..144,400;1,9..144,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -19,7 +22,7 @@
 <body>
     <header>
 
-        <h1>Towards your future self,</h1>
+        <h1>Towards your future <div id="line"></div> self,</h1>
 
     </header>
     <main>
@@ -44,10 +47,25 @@
 
                 <label for="colorDay">Color of your day</label>
                 <input type="color" id="colorDay">
+
+                <input type="submit" id="send-form" value="SUBMIT">
             </form>
         </section>
         
-        <section id="output"></section>
+        <section id="output">
+            <article>
+                <h2>Towards your future <div id="line"></div> self,</h2>
+                <div id="container">
+                <img src="images/sky.JPG" alt="">
+                <p>I will focus on shifting my pattern of (bad habit).
+                    Who I’m becoming will be (adjective).
+                    I feel like I can be my best self when I (verb).
+                    When I think about my future self, I feel (emotion).
+                    (noun, noun, noun) are the three words I want to keep in mind all day.
+                </p>
+                </div>
+            </article>
+        </section>
 
     </main>
 
