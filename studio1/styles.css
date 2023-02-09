@@ -56,18 +56,27 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #0500E2;
+    width: 100%;
 
 } 
 
-input [type=text] {
-    width: 100%;
+input[type="color"] {
+    width: 50px;
+    border-bottom: none;
+    /* width: 100%; */
+    /* border-bottom: 3px solid #0500E2; */
 }
 
-input [type=submit] {
+input[type=submit] {
     background-color: #0500E2;
     border: none;
     color: white;
 }
+
+/* #send-form{
+    border-bottom: none
+    
+} */
 
 fieldset input, fieldset label {
     display: inline;
