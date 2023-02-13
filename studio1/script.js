@@ -57,8 +57,8 @@
 
         madLibs.innerHTML = myText;
 
-        document.getElementById ('#output').className= 'showing';
-        document.getElementById ('#input').className= 'hidden';
+        document.getElementById ('output').className= 'showing';
+        document.getElementById ('input').className= 'hidden';
 
 
     });
