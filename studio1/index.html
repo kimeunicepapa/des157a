@@ -31,39 +31,43 @@
             
             <form id="myForm">
 
-                <label for="badHabit">Your bad habit</label>
-                <input type="text" id="badHabit">
+                <div id="myForm">
+                    <label for="badHabit">I have the bad habit of</label>
+                    <input type="text" id="badHabit" placeholder="Spending hours on my phone" required>
 
-                <label for="adjective">Adjective describing who you want to become</label>
-                <input type="text" id="adjective">
+                    <label for="adjective">Adjective describing who you want to become</label>
+                    <input type="text" id="adjective" placeholder="Wise" required>
 
-                <label for="favActivity">Favorite Activity (verb, present tense) </label>
-                <input type="text" id="favActivity">
+                    <label for="favActivity">Favorite Activity (verb, present tense) </label>
+                    <input type="text" id="favActivity" placeholder="Bake cookies" required>
 
-                <label for="emotion">Emotion describing how you feel about change</label>
-                <input type="text" id="emotion">
+                    <label for="emotion">Emotion describing how you feel about change</label>
+                    <input type="text" id="emotion" placeholder="Excited" required>
 
-                <label for="list">List three words that bring you happiness</label>
-                <input type="text" id="list">
+                    <label for="list">List three words that bring you happiness</label>
+                    <input type="text" id="list" placeholder="Family, friends, bread" required>
 
-                <label for="colorDay">Color of your day</label>
-                <input type="color" id="colorDay">
+                </div>
 
-                <input type="submit" id="send" value="Submit">
+                <div id="colorDay">
+                    <label for="colorDay">Color of your day</label>
+                    <input type="color" id="colorDay" value="#8BB174" required>
+                </div>
+
+                <div id="submit">
+                    <input type="submit" id="send" value="Submit">
+                </div>
+                <p id="error"></p>
             </form>
         </section>
         
-        <section id="output">
+        <section id="output" class="hidden">
             <!-- <h2>Towards your future self,</h2> -->
-                <article id="madLibs"></article>
                 <div id="container">
-                        <div><img src="images/flower2.png" alt="flower"></div>
-                        <!-- <p>I will focus on shifting my pattern of (bad habit).
-                            Who I’m becoming will be (adjective).
-                            I feel like I can be my best self when I (verb).
-                            When I think about my future self, I feel (emotion).
-                            (noun, noun, noun) are the three words I want to keep in mind all day.
-                        </p> -->
+                        <article id="madLibs"></article>
+                
+                        <div id="image"><img src="images/flower2.png" alt="flower"></div>
+                       
                 </div>
 
         </section>
