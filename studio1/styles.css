@@ -67,6 +67,11 @@ p {
 
 }
 
+img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /* FORM STYLING */
 
 form {
@@ -215,7 +220,25 @@ form #colorDay{
     border: 3px solid #0400B7;
 }
 
+#badHabitText{
+    text-decoration: underline;
+}
 
+#adjectiveText {
+    text-decoration: underline;
+}
+
+#favActivityText{
+    text-decoration: underline;
+}
+
+#emotionText{
+    text-decoration: underline;
+}
+
+#listText{
+    text-decoration: underline;
+}
 
 
 

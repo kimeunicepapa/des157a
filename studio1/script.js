@@ -86,12 +86,13 @@
 
         // } 
         else {
+            const listWords = document.querySelector
 
-            myText = `I will focus on shifting my pattern of ${badHabit}.
-            Who I’m becoming will be ${adjective}.
-            I feel like I can be my best self when I ${favActivity}.
-            When I think about my future self, I feel ${emotion}.
-            ${list} are the three words I want to keep in mind all day.`;     
+            myText = `I will focus on shifting my pattern of <span id="badHabitText"> ${badHabit}</span>.
+            Who I’m becoming will be <span id="adjectiveText">${adjective}</span>.
+            I feel like I can be my best self when I <span id="favActivityText">${favActivity}</span>.
+            When I think about my future self, I feel <span id="emotionText">${emotion}</span>.
+            <span id="listText">${list}</span> are the three words I want to keep in mind all day.`;     
             
             document.body.style.backgroundImage = 'none';
 
@@ -100,7 +101,6 @@
 
             document.getElementById ('output').className= 'showing';
             document.getElementById ('input').className= 'hidden';
-
             document.querySelector('#badHabit').value = '';
             document.querySelector('#adjective').value = '';
             document.querySelector('#favActivity').value = '';
@@ -112,6 +112,9 @@
         // document.querySelector('#container img').style.backgroundColor = 'blue';
 
         madLibs.innerHTML = myText;
+
+
+        // name.innerHTML=
 
     });
 
