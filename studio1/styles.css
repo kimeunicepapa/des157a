@@ -3,7 +3,8 @@ body {
     overflow: hidden;
     font-family: Fraunces, serif;
     color: #0400B7;
-    /* background-image: url("../images/dots.png"); */
+    background-image: url("../images/dots.svg");
+    background-size: cover;
     background-color: #0400B7;
 
 }

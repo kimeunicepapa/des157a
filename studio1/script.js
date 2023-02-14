@@ -91,7 +91,9 @@
             Who I’m becoming will be ${adjective}.
             I feel like I can be my best self when I ${favActivity}.
             When I think about my future self, I feel ${emotion}.
-            ${list} are the three words I want to keep in mind all day.`;            
+            ${list} are the three words I want to keep in mind all day.`;     
+            
+            document.body.style.backgroundImage = 'none';
 
 
             document.querySelector('#image img').style.backgroundColor = colorDay.value;
