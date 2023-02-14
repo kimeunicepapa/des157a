@@ -12,7 +12,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,900;1,9..144,400;1,9..144,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,900;1,9..144,400;1,9..144,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -20,56 +20,65 @@
 
 </head>
 <body>
-    <main>
-        <h1>Towards your future self,</h1>
-        <!-- FORM -->
-        <section id="input">
+    <div id="all">
+        <header>
+            <h1>Towards your future self,</h1>
+        </header>
+        <main>
             
-            <form id="myForm">
-
-                <div id="myForm">
-                    <label for="badHabit">I have the bad habit of</label>
-                    <input type="text" id="badHabit" placeholder="Spending hours on my phone" required>
-
-                    <label for="adjective">Adjective describing who you want to become</label>
-                    <input type="text" id="adjective" placeholder="Wise" required>
-
-                    <label for="favActivity">Favorite Activity (verb, present tense) </label>
-                    <input type="text" id="favActivity" placeholder="Bake cookies" required>
-
-                    <label for="emotion">Emotion describing how you feel about change</label>
-                    <input type="text" id="emotion" placeholder="Excited" required>
-
-                    <label for="list">List three words that bring you happiness</label>
-                    <input type="text" id="list" placeholder="Family, friends, bread" required>
-
-                </div>
-
-                <div id="colorDay">
-                    <label for="colorDay">Color of your day</label>
-                    <input type="color" id="colorDay" value="#8BB174" required>
-                </div>
-
-                <div id="submit">
-                    <input type="submit" id="send" value="Submit">
-                </div>
-                <p id="error"></p>
-            </form>
-        </section>
-        
-        <section id="output" class="hidden">
-            <!-- <h2>Towards your future self,</h2> -->
-                <div id="container">
-                        <article id="madLibs"></article>
+            <!-- FORM -->
+            <section id="input">
                 
-                        <div id="image"><img src="images/flower2.png" alt="flower"></div>
-                       
-                </div>
+                <form id="myForm">
 
-        </section>
+                    <div id="divForm">
+                        <label for="badHabit">I have the bad habit of</label>
+                        <input type="text" id="badHabit" class="inputText" placeholder="Spending hours on my phone">
+                        <p id="errorBadHabit">y</p>
 
-    </main>
+                        <label for="adjective">Adjective describing who you want to become</label>
+                        <input type="text" id="adjective" placeholder="Wise">
+                        <p id="errorAdjective">y</p>
 
+                        <label for="favActivity">Favorite Activity (verb, present tense) </label>
+                        <input type="text" id="favActivity" placeholder="Bake cookies">
+                        <p id="errorFavActivity">y</p>
+
+                        <label for="emotion">Emotion describing how you feel about change</label>
+                        <input type="text" id="emotion" placeholder="Excited">
+                        <p id="errorEmotion">y</p>
+
+                        <label for="list">List three words that bring you happiness</label>
+                        <input type="text" id="list" placeholder="Family, friends, bread">
+                        <p id="errorList">y</p>
+
+                    </div>
+
+                    <div id="colorDiv">
+                        <label for="colorDay">Color of your day</label>
+                        <input type="color" id="colorDay" value="#8BB174">
+                        <p id="errorColor">y</p>
+                    </div>
+
+                    <div id="submit">
+                        <input type="submit" id="send" value="Submit">
+                    </div>
+                    
+                </form>
+            </section>
+            
+            <section id="output" class="hidden">
+                    <div id="container">
+                            <article id="madLibs"></article>
+                    
+                            <div id="image"><img src="images/flower2.png" alt="flower"></div>
+                        
+                    </div>
+
+            </section>
+
+        </main>
+    </div>
     
 </body>
 </html>
