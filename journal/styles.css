@@ -70,6 +70,13 @@ h3 {
     color: #CFEBE6;
 }
 
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #E94538;
+    text-transform: uppercase;
+}
+
 p {
     margin-top: 0;
     color: black;
@@ -78,6 +85,21 @@ p {
 a {
     color: #E94538;
 
+}
+
+img {
+    display: block;
+    max-height: 180px;
+
+    margin-right: auto;
+    padding: 0 0px 5px 0px;
+}
+
+figcaption {
+
+    font-style: italic;
+    color: darkgrey;
+    padding-bottom: 5px;
 }
 
 
