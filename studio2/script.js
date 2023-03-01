@@ -8,7 +8,7 @@
 
     window.addEventListener('load', function(){
 
-        const posts = document.querySelectorAll('section');
+        const posts = document.querySelectorAll('article');
         let postTops = [];
         let pageTop;
         let counter = 1;
