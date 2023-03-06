@@ -10,6 +10,7 @@ body {
 
 main {
     display: flex;
+    position: relative;
 }
 
 section {
@@ -17,7 +18,7 @@ section {
 }
 
 article {
-    height: 100vh;
+    height: 750px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -52,7 +53,7 @@ p {
 figure {
     display: block;
     margin: 0;
-    width: 58vw;
+    min-width: 730px;
     /* max-width: 1000px; */
     height: 100vh;
 
@@ -71,7 +72,7 @@ figure {
 
 figure img {
     transition: all 3s ease;
-    max-height: 1200px;
+    /* max-height: 1200px; */
 
     position: absolute;
     top: 390px;
@@ -80,12 +81,17 @@ figure img {
 
 
 #left {
-    width: 40vw;
+    min-width: 430px;
+    max-width: 500px;
+    position: absolute;
+    z-index: 1;
 }
 
 #right {
-    width: 48vw;
-    position: relative;
+    /* max-width: 700px; */
+    position: absolute;
+    z-index: 2;
+
 }
 
 #earringContainer{
