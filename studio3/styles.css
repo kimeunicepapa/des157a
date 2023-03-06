@@ -6,21 +6,27 @@ body {
     font-family: 'Averia Sans Libre', cursive;
     color: #333;
     line-height: 1.5em;
+    background-color: #EDF4E1;
 }
 
 main {
-    margin: 0;
-    padding: 30px 0;
-    background-color: #FFEED6;
+    width: 1100px;
+    height: 700px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+
+    border: #27622F 10px solid;
+    border-radius: 6px;
 }
 
 h1 {
-    /* padding: 0 20px; */
     margin: 0;
 
     font-family: 'Rubik Bubbles', cursive;
     color: #27622F;
-    font-size: 6.4em;
+    font-size: 6em;
     text-align: center;
     text-transform: uppercase;
     line-height: 1em;
@@ -31,11 +37,15 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     padding: 20px 0;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     line-height: 1em;
     text-align: center;
     text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
 }
 
 button { 
@@ -58,6 +68,15 @@ a {
     text-transform: uppercase;
 }
 
+/* .fadeIn {
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+
+    transition: all 200ms ease;
+} */
+
 .hidden {
     visibility: hidden;
     opacity: 0;
@@ -77,14 +96,9 @@ a {
 }
 
 #container {
-    width: 1100px;
-    height: 700px;
-
-    display: flex;
-    justify-content: center;
-	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 #rulesOverlay {
     position: absolute;
@@ -101,7 +115,7 @@ a {
 #rulesOverlay article {
     box-sizing: border-box;
     background-color: white;
-    padding: 50px;
+    padding: 40px;
     width: 650px;
     height: 500px;
 
@@ -114,11 +128,25 @@ a {
     font-size: 1.2em;
 }
 
-#gamecontrol {
-    position: relative;
-    text-align: center;
+#rulesOverlay h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
 }
 
+#gamecontrol {
+    /* height: 60px; */
+    position: relative;
+    text-align: center;
+
+}
+
+#gamecontrol #startgame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
 
 #gamecontrol #quit {
     position: absolute;
@@ -130,28 +158,24 @@ a {
     background-color: #4B3E42;
     color: #FFEED6;
     border-radius: 6px;
-    /* font-size: 1.5em; */
 }
-
 
 #game {
-    min-height: 250px;
-    /* background-image: url(images/ground.png); */
-    /* height: 200px; */
+    margin-bottom: 0;
+    height: 230px;
+
 }
 
-
 #plants{
-    /* height: 150px; */
     background-image: url(images/ground.png); 
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
-
 }
 
 #score {
-    min-height: 200px;
+    height: 165px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     background-color: #4B3E42;
@@ -160,7 +184,13 @@ a {
 }
 
 #score h2 {
-    font-size: 3em;
+    color: #EDAA43;
+    font-size: 2em;
+}
+
+#score p {
+    margin: 30px;
+    font-size: 2em;
 }
 
 #score, #score1, #score2 {
@@ -170,7 +200,7 @@ a {
 
 
 #actions {
-    min-height: 55px;
+    height: 100px;
    
     padding: 20px 0;
     background-color: #4B3E42;
@@ -191,4 +221,9 @@ a {
     text-align: center;
     text-transform: uppercase;
     
+}
+
+#actions #pass {
+    background-color: #EDAA43;
+    color: #4B3E42;
 }
