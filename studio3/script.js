@@ -82,12 +82,12 @@
 
         function throwDice(){
             actionArea.innerHTML = '';
-            //get random values for 1-6 for the score
+            //get random values for 0-5 for the score
             gameData.roll1 = Math.floor(Math.random() * 6); //using ceil could resul in a zero
             gameData.roll2 = Math.floor(Math.random() * 6);
             game.innerHTML = `<h2>${gameData.players[gameData.index]}'s turn</h2>`;
 
-            //put the dice images on the screen; the dice array index needs to be one less than roll1 and roll2
+            //put the dice sprouts on the screen
             game.innerHTML += `<div id="plants"><img src="${gameData.dice1[gameData.roll1]}"><img src="${gameData.dice2[gameData.roll2]}"></div>`;
             plantSound.play();
 
@@ -96,7 +96,7 @@
             console.log(gameData.rollSum);
             // gameData.rollSum = 2;
 
-            //if two 0's are rolled...
+            //if two 0's are rolled(both sides empty)...
             if(gameData.rollSum === 0){
                 console.log("snake eyes were rolled");
                 actionArea.innerHTML += '<p>Oh no! You forgot to water everything, back to 0</p>';
@@ -111,7 +111,7 @@
 
                 setTimeout(setUpTurn, 2000);
             }
-            //if either side is empty/0...
+            //if either side is 0(empty)...
             else if(gameData.roll1 === 0 || gameData.roll2 === 0){
                 console.log("one of the two dice was a 0");
 
@@ -125,7 +125,7 @@
 
                 setTimeout(setUpTurn, 5000);
             } 
-            //if neither die is a 1...
+            //if neither side is 0(empty)...
             else {
                 console.log("the game proceeds");
                 gameData.score[gameData.index] += gameData.rollSum;
