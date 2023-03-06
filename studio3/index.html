@@ -9,23 +9,47 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 
 </head>
 <body>
-    <h1>Game of PIG</h1>
-    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
-    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+    <div id="container">
+        <main>
+            <h1>Plant and hope</h1>
+            <p id="openRules"><a href="#" class="open">Game rules?</a></p>
 
-    <div id="gamecontrol">
-        <h2>Start a Game</h2>
-        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            <div id="gamecontrol">
+                <!-- <h2>Start a Game</h2> -->
+                <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            </div>
+            
+            <section id="game">
+                <div id="plants">
+                </div>
+            </section>
+            
+            <div id="actions"></div>
+
+            <div id="score">
+                <div id="score1"></div>
+                <div id="score2"></div>
+            </div>
+        </main>
+
+        <section id="rulesOverlay" class="hidden">
+            <article>
+                <h2>Rules for the game</h2>
+                <p>There are two players. The player whose turn it is hopes for new sprouts. The total of the sprouts is added to the current player's score, unless either side is empty. If this happens, it means this player "accidentally" forgot to water the seeds and the turn is passed to the other player. After each leap of hope, the current player can either hope again, (assuming no side turned empty) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 sprouts or higher wins.</p> 
+                <p>Oh, and if both sides are empty(snake eyes)that means the player forgot the seeds completely existed, and unfortunately all the previous grown sprouts died. So don’t do that.</p>
+                <button class="close">I got it!</button>
+            </article>
+        </section>
     </div>
-
-    <div id="game"></div>
-    <div id="actions"></div>
-    <div id="score"></div>
     
 </body>
 </html>
