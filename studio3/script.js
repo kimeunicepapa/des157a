@@ -162,7 +162,7 @@
         }
 
         function showCurrentScore(){
-                    score1.innerHTML = `<h3>${gameData.players[0]}</h3> <p>${gameData.score[0]}</p>`;
+                    score1.innerHTML = `<h3>${gameData.players[0]}</h3><p>${gameData.score[0]}</p>`;
                     score2.innerHTML = `<h3>${gameData.players[1]}</h3><p>${gameData.score[1]}</p>`
         }
 
