@@ -5,6 +5,30 @@ main {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
-    display: flex;
 }
+
+h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    width: 48%;
+    padding: 0 10px 0 0;
+}
+
+/* p {
+    display: flex;
+    flex: 1;
+} */
