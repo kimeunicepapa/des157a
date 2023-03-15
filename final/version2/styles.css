@@ -122,9 +122,6 @@ figure {
     left: 160px;
 }
 
-#earringLeft:hover{
-    transform: scale(2);
-}
 
 #earringRight {
     top: -815px;
@@ -152,37 +149,26 @@ figure {
 }
 
 
-
-.animateGif {
-    animation-duration: 100ms;
-    /* animation-fill-mode: both; */
-
-    /* animation-delay: 0.5s; */
-}
-
 .fadeIn {
     animation-name: fadein;
-    animation-delay: 0.5s;
-    /* animation-fill-mode: forwards; */
-    transition: all 100ms ease;
-    opacity:1;
+    animation-duration: 1s;
 
 }
 
 .fadeOut {
     animation-name: fadeout;
-    animation-delay: 0.5s;
-    /* transition: all 100ms ease;
-    opacity:0; */
+    animation-duration: 1s;
+
 }
 
 .shirtIn {
     animation-name: fadein;
-    animation-delay: 0.5s;
+    animation-duration: 1s;
 }
 
 .shirtOut {
     animation-name: fadeout;
+    animation-duration: 1s;
 }
 
 @keyframes fadein {

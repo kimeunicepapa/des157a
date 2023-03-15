@@ -15,6 +15,10 @@
         let prevCounter = 1;
         let doneResizing;
 
+        //image variable
+        const myImageLeft = document.querySelector('#earringLeft');
+        const myImageRight = document.querySelector('#earringRight');
+        const myShirt = document.querySelector('#shirtColor');
 
         //variables for setting scroll direction
         let exitDirection;
@@ -39,37 +43,30 @@
 
             if (counter != prevCounter) {               
 
-                //image variable
-                const myImageLeft = document.querySelector('#earringLeft');
-                const myImageRight = document.querySelector('#earringRight');
-                const myShirt = document.querySelector('#shirtColor');
-
                 //fade out image
-                myImageLeft.className = 'animateGif fadeOut';
-                myImageRight.className = 'animateGif fadeOut';
-                myShirt.className = 'animateGif shirtOut';
+                myImageLeft.className = 'fadeOut';
+                myImageRight.className = 'fadeOut';
+                myShirt.className = 'shirtOut';
+
+                //start timer
+                const myTimer=setTimeout(changeEarrings, 1000);
 
                 //change image src according to section number when fadeout animation ends
-                myImageLeft.addEventListener('animationend', function(){
+
+                function changeEarrings(){
+                    console.log('changeEarrings');
+
+                    // clear the timer so that it doesn't get called again until the user scrolls again
+                    clearTimeout(myTimer);
+
                     myImageLeft.src = "images/earring" + counter + ".gif";
-
-                    myImageLeft.className = 'animateGif fadeIn';
-
-                })
-
-                myImageRight.addEventListener('animationend', function(){
                     myImageRight.src = "images/earring" + counter + "-right.gif";
-
-                    myImageRight.className = 'animateGif fadeIn';
-                })
-
-                myShirt.addEventListener('animationend', function(){
                     myShirt.src = "images/shirt" + counter + ".svg";
 
-                    myShirt.className = 'animateGif shirtIn';
-                })
-
-
+                    myImageLeft.className = 'fadeIn';
+                    myImageRight.className = 'fadeIn';
+                    myShirt.className = 'shirtIn';
+                }
 
                 prevCounter = counter;
             }
