@@ -49,7 +49,7 @@
                 myShirt.className = 'shirtOut';
 
                 //start timer
-                const myTimer=setTimeout(changeEarrings, 1000);
+                const myTimer=setTimeout(changeEarrings, 500);
 
                 //change image src according to section number when fadeout animation ends
 

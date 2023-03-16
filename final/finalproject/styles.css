@@ -5,7 +5,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     color: black;
-    background-color: #91B993;
+    background-color: #FFF8F0;
 }
 
 main {
@@ -14,7 +14,7 @@ main {
 }
 
 section {
-    background-color: #91B993;
+    background-color: #FFF8F0;
 }
 
 article {
@@ -31,26 +31,34 @@ h1 {
     font-family: 'Chango', cursive;
     font-size: 3.5em;
     line-height: 1.5em;
-    text-shadow: 3px 5px #E5C5F9;
+    text-shadow: 3px 3px #c87df4;
     text-transform: uppercase;
-    color: #4C191B;
+    color: #143109;
 }
 
 h2 {
-    margin-bottom: 0;
-    font-size: 2em;
+    font-family: 'Chango', cursive;
+    margin: 0;
+    font-size: 4em;
     font-weight: 700;
+    color: #143109;
 }
 
 h3 {
     font-size: 2em;
 }
 
+h4 {
+    margin: 0;
+    font-size: 2em;
+    
+}
+
 
 p {
+    margin-bottom: 0;
     font-size: 1.4em;
     line-height: 1.4em;
-    font-family: 'Lora', serif;
     font-weight: 500;
 
 }
@@ -151,34 +159,34 @@ figure {
 }
 
 .crossed{
-    text-decoration: line-through 3px #E5C5F9;
+    text-decoration: line-through 3px #c87df4;
 }
 
 .highlight {
-    text-decoration: underline 3px #E5C5F9;
+    text-decoration: underline 3px #c87df4;
 }
 
 
 .fadeIn {
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 500ms;
 
 }
 
 .fadeOut {
     animation-name: fadeout;
-    animation-duration: 1s;
+    animation-duration: 500ms;
 
 }
 
 .shirtIn {
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 500ms;
 }
 
 .shirtOut {
     animation-name: fadeout;
-    animation-duration: 1s;
+    animation-duration: 500ms;
 }
 
 @keyframes fadein {
