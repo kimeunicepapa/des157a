@@ -128,6 +128,62 @@ figure {
     left: 515px;
 }
 
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 50px;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay p {
+    margin-bottom: 0;
+}
+
+#overlay li {
+    padding: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close {
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    background-color: #E5C5F9;
+    border: #4C191B solid;
+    border-radius: 5px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
 .toBottom {
     margin-top: 50px;
 }
