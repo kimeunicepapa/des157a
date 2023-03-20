@@ -5,6 +5,8 @@ main {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -26,6 +28,11 @@ section {
 article {
     width: 48%;
     padding: 0 10px 0 0;
+}
+
+img {
+    max-height: 500px;
+
 }
 
 /* p {
