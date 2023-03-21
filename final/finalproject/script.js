@@ -15,10 +15,11 @@
         let prevCounter = 1;
         let doneResizing;
 
-        //image variable
+        //image variables
         const myImageLeft = document.querySelector('#earringLeft');
         const myImageRight = document.querySelector('#earringRight');
         const myShirt = document.querySelector('#shirtColor');
+
 
         //variables for setting scroll direction
         let exitDirection;
@@ -49,7 +50,9 @@
                 myShirt.className = 'shirtOut';
 
                 //start timer
-                const myTimer=setTimeout(changeEarrings, 500);
+                const myTimer = setTimeout(changeEarrings, 500);
+
+                changeBackground();
 
                 //change image src according to section number when fadeout animation ends
 
@@ -68,7 +71,16 @@
                     myShirt.className = 'shirtIn';
                 }
 
+                function changeBackground(){
+                    console.log('changeBackground');
+
+                    document.body.className = "section" + counter;
+
+
+                }
+
                 prevCounter = counter;
+
             }
 
 

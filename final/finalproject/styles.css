@@ -5,16 +5,12 @@
 body {
     font-family: 'Rubik', sans-serif;
     color: black;
-    background-color: #FFF8F0;
+    background-color: #91B993;
 }
 
 main {
     display: flex;
     position: relative;
-}
-
-section {
-    background-color: #FFF8F0;
 }
 
 article {
@@ -23,7 +19,6 @@ article {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    /* position: relative; */
 }
 
 h1 {
@@ -31,9 +26,9 @@ h1 {
     font-family: 'Chango', cursive;
     font-size: 3.5em;
     line-height: 1.5em;
-    text-shadow: 3px 3px #c87df4;
+    text-shadow: 3px 3px #E5C5F9;
     text-transform: uppercase;
-    color: #143109;
+    color: #4C191B;
 }
 
 h2 {
@@ -41,7 +36,9 @@ h2 {
     margin: 0;
     font-size: 4em;
     font-weight: 700;
-    color: #143109;
+    /* color: #143109; */
+    color: #4C191B;
+
 }
 
 h3 {
@@ -87,7 +84,7 @@ figure {
 
 #left {
     min-width: 430px;
-    max-width: 500px;
+    max-width: 550px;
     z-index: 1;
 }
 
@@ -145,6 +142,22 @@ figure {
     left: 515px;
 }
 
+.section1 {
+    background-color: #91B993;
+    transition: all ease-in-out 1.5s;
+
+}
+
+.section2 {
+    background-color: #9bd0bc;
+    transition: all ease-in-out 1.5s;
+}
+
+.section3 {
+    background-color: #fcccd3;
+    transition: all ease-in-out 1.5s;
+}
+
 .toBottom {
     margin-top: 50px;
 }
@@ -158,11 +171,11 @@ figure {
 }
 
 .crossed{
-    text-decoration: line-through 3px #c87df4;
+    text-decoration: line-through 3px black;
 }
 
 .highlight {
-    text-decoration: underline 3px #c87df4;
+    text-decoration: underline 3px black;
 }
 
 
