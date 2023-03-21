@@ -48,9 +48,7 @@ h3 {
 h4 {
     margin: 0;
     font-size: 2em;
-    
 }
-
 
 p {
     margin-bottom: 0;
@@ -64,21 +62,16 @@ figure {
     display: block;
     margin: 0;
     min-width: 730px;
-    /* max-width: 1000px; */
     height: 100vh;
 
     position: fixed;
     top: 0;
     right: 0;
 
-    /* background-image: url(images/illustration.svg);
-    background-color: #E5C5F9; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-size: cover; 
     background-position: top right;
     resize: none;
-
 }
 
 
@@ -89,10 +82,8 @@ figure {
 }
 
 #right {
-    /* max-width: 700px; */
     position: absolute;
     z-index: 2;
-
 }
 
 #title {
@@ -117,7 +108,7 @@ figure {
     z-index: 1;
     top: 550px;
     right: 100px;
-    /* bottom: calc(0-100%); */
+
 }
 
 #earringContainer{
